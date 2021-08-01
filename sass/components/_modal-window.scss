@@ -15,7 +15,7 @@
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal_close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,6 @@
   transition: fill var(--main-duration) var(--timing-function);
 }
 
-.modal-close-btn:hover {
+.modal_close-btn:hover {
   fill: var(--accent-color);
 }

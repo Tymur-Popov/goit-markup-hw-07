@@ -1,20 +1,20 @@
-.modal-form-header {
-  font-family: var(--main-font);
-  font-weight: var(--font-weight-secondary);
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  margin-bottom: 12px;
-}
-
 .modal-form {
   display: flex;
   flex-direction: column;
+
+  .modal-form_header {
+    font-family: var(--main-font);
+    font-weight: var(--font-weight-secondary);
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+  }
 }
 
-.modal-form-field {
+.modal-form_field {
   font-family: var(--main-font);
   font-weight: var(--font-weight-modal-label);
   font-size: 12px;
@@ -26,14 +26,14 @@
   margin-bottom: 10px;
 }
 
-.modal-form-input-wrapper {
+.modal-form_input-wrapper {
   display: block;
   position: relative;
 
   margin-top: 4px;
 }
 
-.modal-form-input {
+.modal-form_input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -47,7 +47,7 @@
   transition: border var(--main-duration) var(--timing-function);
 }
 
-.modal-form-input-icon {
+.modal-form_input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -56,17 +56,17 @@
   transition: fill var(--main-duration) var(--timing-function);
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form_input:hover,
+.modal-form_input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-form-input:focus + .modal-form-input-icon,
-.modal-form-input:hover + .modal-form-input-icon {
+.modal-form-input:focus + .modal-form_input-icon,
+.modal-form-input:hover + .modal-form_input-icon {
   fill: var(--accent-color);
 }
 
-.modal-form-message {
+.modal-form_message {
   resize: none;
 
   width: 100%;
@@ -81,7 +81,7 @@
   transition: border var(--main-duration) var(--timing-function);
 }
 
-.modal-form-message::placeholder {
+.modal-form_message::placeholder {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
@@ -89,12 +89,12 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-message:hover,
-.modal-form-message:focus {
+.modal-form_message:hover,
+.modal-form_message:focus {
   border-color: var(--accent-color);
 }
 
-.modal-form-checkbox-label {
+.modal-form_checkbox-label {
   display: flex;
   align-items: center;
   font-family: var(--main-font);
@@ -108,7 +108,7 @@
   margin-top: 20px;
 }
 
-.modal-form-checkbox-label::before {
+.modal-form_checkbox-label::before {
   display: block;
   content: "";
   background-image: url(../images/modal-checkbox/icon-checkbox.png);
@@ -121,18 +121,18 @@
   margin-right: 7px;
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+.modal-form_checkbox:checked + .modal-form_checkbox-label::before {
   background-image: url(../images/modal-checkbox/icon-checkbox-checked.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.modal-form-label-link {
+.modal-form_label-link {
   text-decoration-line: underline;
   color: var(--accent-color);
 }
 
-.modal-form-btn {
+.modal-form_btn {
   align-self: center;
   cursor: pointer;
 
