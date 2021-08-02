@@ -13,24 +13,26 @@
   border-radius: 4px;
 
   padding: 40px;
+
+  &_close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 6px 6px;
+
+    transition: fill var(--main-duration) var(--timing-function);
+
+    &:hover {
+      fill: var(--accent-color);
+    }
+  }    
 }
 
-.modal_close-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  cursor: pointer;
-  padding: 6px 6px;
 
-  transition: fill var(--main-duration) var(--timing-function);
-}
-
-.modal_close-btn:hover {
-  fill: var(--accent-color);
-}

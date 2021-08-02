@@ -1,21 +1,17 @@
-.footer-container {
-  display: flex;
-}
-
 .footer {
   background-color: var(--footer-back-color);
 }
 
-.logo-footer {
+.footer__container {
+  display: flex;
+}
+
+.footer__logo {
   width: 145px;
   padding-top: 0;
   padding-bottom: 0;
   margin-right: 0;
   margin-bottom: 20px;
-}
-
-.logo__right-side {
-  color: var(--logo-icon-color-right);
 }
 
 .footer__location-link {
@@ -66,14 +62,34 @@
   margin-left: 70px;
 }
 
-.footer-mailing-container {
+.footer__social-p {
+  font-weight: var(--font-weight-secondary);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer__social-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer__mailing-container {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-top: 72px;
 }
 
-.footer-mailing-header {
+.footer__mailing-header {
   font-family: var(--main-font);
   font-weight: var(--font-weight-secondary);
   font-size: 14px;
@@ -86,7 +102,7 @@
   margin-bottom: 20px;
 }
 
-.footer-user-mail-input {
+.footer__user-mail-input {
   color: #ffffff;
 
   padding: 15px 16px;
@@ -101,7 +117,7 @@
   outline: none;
 }
 
-.footer-user-mail-input::placeholder {
+.footer__user-mail-input::placeholder {
   font-family: var(--main-font);
   font-weight: var(--font-weight-p);
   font-size: 16px;
@@ -112,16 +128,16 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-user-mail-input:hover,
-.footer-user-mail-input:focus {
+.footer__user-mail-input:hover,
+.footer__user-mail-input:focus {
   border-color: var(--accent-color);
 }
 
-.mailing-button-wrapper {
+.footer__mailing-button-wrapper {
   display: flex;
 }
 
-.footer-mailing-button {
+.footer__mailing-button {
   color: #ffffff;
   font-family: var(--main-font);
   font-weight: var(--font-weight-secondary);
@@ -144,6 +160,6 @@
   cursor: pointer;
 }
 
-.footer-button-mail-icon {
+.footer__mailing-button-icon {
   margin-left: 10px;
 }
