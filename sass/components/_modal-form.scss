@@ -79,18 +79,18 @@
 
     transition: border var(--main-duration) var(--timing-function);
 
-    &::placeholder {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.01em;
-
-      color: rgba(117, 117, 117, 0.5);
-    }
-
     &:hover,
     &:focus {
       border-color: var(--accent-color);
     }
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
   }
 
   &__checkbox-label {
@@ -120,7 +120,7 @@
     }
   }
 
-  &__checkbox:checked + &_checkbox-label::before {
+  &__checkbox:checked + &__checkbox-label::before {
     background-image: url(../images/modal-checkbox/icon-checkbox-checked.png);
     background-size: contain;
     background-repeat: no-repeat;
